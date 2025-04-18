@@ -1,0 +1,7 @@
+Problems in Prison Architect:
+1. Single-threaded bottleneck: Why not use more cores since Steam Deck has 4 cores 8 threads
+2. Multi-entity simulation (large numbers of units being simulated simultaneously): Can we use Machine Learning to simplify this procedure?
+3. The logics of different prisoners are all connected, the CPU can't calculate the logics of different prisoners in the same time.
+But we may divide the logic into "concurrent" tasks
+Reduce the calculation accuracy or reduce the frequency. For example, change the prisoner behavior update from 60 times/second to 10 times/second.
+Adopting multi-threaded task queue / ECS architecture. For example, Cities Skylines 2.
